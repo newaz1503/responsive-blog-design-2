@@ -1,0 +1,1218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog | Techie Coder</title>
+    <!-- bootstrap 5 css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- box icon-->
+    <link rel="stylesheet" href="./assets/css/boxicons.min.css">
+    <!-- slick css-->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!-- custom css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<!-------------Header section------------->
+<!--menu section-->
+<header class="header">
+    <div class="main__overlay" id="overlay"></div>
+    <nav class="navbar navbar-expand-md p-0">
+        <div class="container-lg">
+            <a class="navbar-brand" href="index.html">Blog</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="index.html" role="button">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="home">
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Movies</a></li>
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Cooking</a></li>
+                            <li><a class="dropdown-item" href="#">Technologies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <ul class="social list-inline">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-facebook social__icon"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-twitter social__icon"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-instagram social__icon"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-youtube social__icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search__box">
+                <i class="bx bx-search search__icon mx-1" id="searchBar"></i>
+                <i class="bx bx-menu menu__bar" id="menuBar"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--End menu section-->
+
+<!--Canvas section-->
+<section class="canvas" id="canvas">
+    <div class="canvas__close">
+        <i class="bx bx-x close__btn" id="close"></i>
+    </div>
+    <nav class="nav">
+        <div class="container">
+            <a class="navbar-brand text-center" href="index.html">Blog</a>
+            <div class="menu__items mb-5">
+                <ul class="mb-2 mb-lg-0">
+                    <li class="nav-item active" id="canvasSubMenuToggler">
+                        <a class="nav-link dropdown-toggle">
+                            Home
+                        </a>
+                        <ul class="submenu mb-2" aria-labelledby="home" id="subMenu">
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Movies</a></li>
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Cooking</a></li>
+                            <li><a class="dropdown-item" href="#">Technologies</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <ul class="social list-inline">
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-facebook social__icon"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-twitter social__icon"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-instagram social__icon"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="bx bxl-youtube social__icon"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+<!--End Canvas section-->
+
+<!--Search section-->
+<section class="search-popup" id="searchPopUp">
+    <div class="search">
+        <div class="search-close" id="closeSearchPopUp">
+            <i class="bx bx-x search-close-icon"></i>
+        </div>
+        <form class="search-area">
+            <input type="email" placeholder="Search here" class="form-control">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+<!--End Search section-->
+<!------------End Header section---------->
+
+<!--------------Main section------------->
+<main>
+    <!--section-1 start-->
+     <section id="hero">
+         <div class="container-lg">
+             <div class="row gy-5">
+                 <div class="col-md-12 col-lg-8 col-xl-8 col-xxl-8">
+                     <div class="post">
+                         <div class="post-content">
+                             <a href="#" class="category badge p-0">Finance</a>
+                             <h2 class="post-title pt-3 pb-3">
+                                 <a href="#">3 Things to avoid while investing in stock market as a beginner</a>
+                             </h2>
+                             <ul class="meta list-inline">
+                                 <li class="list-inline-item">
+                                     <i class="bx bx-user"></i>&nbsp;<a href="#">Newaz Sharif</a>
+                                 </li>
+                                 <li class="list-inline-item"><i class="bx bx-calendar"></i>&nbsp;02 July, 2021</li>
+                             </ul>
+                         </div>
+                         <a href="#">
+                             <div class="thumb">
+                                 <img src="./assets/images/slider-4.png" alt="Stock Market" class="rounded">
+                             </div>
+                         </a>
+                     </div>
+                 </div>
+                 <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+                     <div class="post-tabs rounded bordered">
+                         <ul class="nav nav-tabs nav-pills nav-fill" id="postTab" role="tablist">
+                             <li class="nav-item" role="presentation">
+                                 <button type="button" aria-controls="popular" aria-selected="true" class="nav-link active"
+                                  data-bs-target="#popular" data-bs-toggle="tab" id="popular-tab" role="tab" >
+                                     Popular
+                                 </button>
+                             </li>
+                             <li class="nav-item" role="presentation">
+                                 <button type="button" aria-controls="recent" aria-selected="false" class="nav-link"
+                                         data-bs-target="#recent" data-bs-toggle="tab" id="recent-tab" role="tab" >
+                                     Recent
+                                 </button>
+                             </li>
+                         </ul>
+                        <!--content-->
+                         <div class="tab-content" id="postsTabContent">
+                             <div class="ids-dual-ring" id="dualRing"></div>
+                             <!--Popular-->
+                             <div class="tab-pane fade show active" id="popular" aria-label="popular-tab" role="tabpanel">
+                                 <!--post1-->
+                                 <article>
+                                     <div class="popular-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-1.jpg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Don't any questions. Just go with the flow</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">5 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                                 <!--post2-->
+                                 <article>
+                                     <div class="popular-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-2.jpg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Grow much money as you can.</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">7 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                                 <!--post3-->
+                                 <article>
+                                     <div class="popular-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-3.jpeg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Be happy with your favourite one</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">9 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                                 <!--post4-->
+                                 <article>
+                                     <div class="popular-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-4.jpeg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Bitcoin price gradually high after fall down</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">12 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                             </div>
+                             <!--Recent-->
+                             <div class="tab-pane fade" id="recent" aria-label="recent-tab" role="tabpanel">
+                                 <!--post1-->
+                                 <article>
+                                     <div class="recent-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-5.jpg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Enjoy your life with fresh air and blue sky</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">5 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                                 <!--post2-->
+                                 <article>
+                                     <div class="recent-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-6.jpg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Travel around the world with royal speed</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">7 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                                 <!--post3-->
+                                 <article>
+                                     <div class="recent-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-7.jpg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Bangladesh need argent help to recover COVID-19.</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">9 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                                 <!--post4-->
+                                 <article>
+                                     <div class="recent-post">
+                                         <div class="thumb circle">
+                                             <a href="#">
+                                                 <div class="inner">
+                                                     <img src="./assets/images/sidebar-1.jpg" alt="Popular Post" class="rounded-circle">
+                                                 </div>
+                                             </a>
+                                         </div>
+                                         <div class="post-content">
+                                             <h6 class="post-title">
+                                                 <a href="#">Sakib al hasan ban 3 matches</a>
+                                             </h6>
+                                             <ul class="meta list-inline">
+                                                 <li class="list-inline-item">12 July, 2021</li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </article>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+    <!--section-1 End-->
+    <div class="spacer" data-height="50"></div>
+    <!--section-2 start-->
+    <section class="editor-pick">
+        <div class="container-lg">
+            <div class="row gy-4">
+                <div class="col-lg-8">
+                   <div class="section-header">
+                       <h3 class="section-title">Editor's Pick</h3>
+                   </div>
+                    <div class="padding-30 rounded bordered">
+                        <div class="row gy-5">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <!--post-->
+                                <div class="post">
+                                    <div class="wrap rounded">
+                                        <a href="#" class="category badge">Lifestyle</a>
+                                        <span class="post-format">
+                                            <i class="bx bx-photo-album"></i>
+                                        </span>
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/dubai-pics-23.jpg" alt="Editor Pick">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="meta list-inline mt-4">
+                                        <li class="list-inline-item author">
+                                            <a href="#">
+                                                <i class="bx bx-user"></i>&nbsp;Saikot Khan
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">04 July, 2021</li>
+                                    </ul>
+                                    <h5 class="post-title mt-3 mb-3 pick-title">
+                                        <a href="#">3 must visit place in Dubai</a>
+                                    </h5>
+                                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/dubai-pictures-13.jpg" alt="Editor Pick" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">Don't ask any questions. Just go with the flow</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">5 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/dubai-434.jpg" alt="Editor Pick" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">Don't ask any questions. Just go with the flow</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">5 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/dubai-6.jpg" alt="Editor Pick" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">Don't ask any questions. Just go with the flow</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">5 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/dubai-pics-23.jpg" alt="Popular Post" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">Don't ask any questions. Just go with the flow</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">5 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer" data-height="50"></div>
+                    <!--trending section-->
+                    <div class="section-header">
+                        <h3 class="section-title">Trending</h3>
+                    </div>
+                    <div class="padding-30 rounded bordered">
+                        <div class="row gy-5">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <!--post-->
+                                <div class="post before-separation">
+                                    <div class="wrap rounded">
+                                        <a href="#" class="category badge">Technology</a>
+                                        <span class="post-format">
+                                            <i class="bx bx-photo-album"></i>
+                                        </span>
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/trend-1.jpg" alt="Trending">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="meta list-inline mt-4">
+                                        <li class="list-inline-item author">
+                                            <a href="#">
+                                                <i class="bx bx-user"></i>&nbsp;Saikot Khan
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">04 July, 2021</li>
+                                    </ul>
+                                    <h5 class="post-title mt-3 mb-3 pick-title">
+                                        <a href="#">iPhone 12 burst the tech market</a>
+                                    </h5>
+                                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="spacer" data-height="10"></div>
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/robin-worrall-749755-unsplash.jpg" alt="Popular Post" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">Mobile addiction increase health disease</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">12 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/81042506.jpg" alt="Popular Post" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">Roar the football world cup</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">10 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <!--post-->
+                                <div class="post before-separation pb-2">
+                                    <div class="wrap rounded">
+                                        <a href="#" class="category badge">Movie</a>
+                                        <span class="post-format">
+                                            <i class="bx bx-photo-album"></i>
+                                        </span>
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/101049576.jpg" alt="Trending">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <ul class="meta list-inline mt-4">
+                                        <li class="list-inline-item author">
+                                            <a href="#">
+                                                <i class="bx bx-user"></i>&nbsp;Saikot Khan
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">04 July, 2021</li>
+                                    </ul>
+                                    <h5 class="post-title mt-3 mb-3 pick-title">
+                                        <a href="#">Ramboo hits the box office</a>
+                                    </h5>
+                                    <p class="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                                <div class="spacer" data-height=20"></div>
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/61035307.jpg" alt="Popular Post" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">The best football club around the world</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">12 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article>
+                                    <div class="popular-post">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="./assets/images/191015211.jpg" alt="Popular Post" class="rounded">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="post-content">
+                                            <h6 class="post-title">
+                                                <a href="#">Check the speed of racing car</a>
+                                            </h6>
+                                            <ul class="meta list-inline">
+                                                <li class="list-inline-item">10 July, 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer" data-height="50"></div>
+                    <!--slick carousel-->
+                    <div class="section-header">
+                        <h3 class="section-title">Inspiration</h3>
+                        <div class="slick-arrow-top">
+                            <button type="button" class="carousel-topNav-prev slick-custom-button" data-role="none" aria-label="Previous">
+                                <i class="bx bx-left-arrow-alt"></i>
+                            </button>
+                            <button type="button" class="carousel-topNav-next slick-custom-button" data-role="none" aria-label="Next">
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row post-carousel slider-1">
+                            <div class="col-md-6 post post-over-content">
+                                <div class="wrap">
+                                    <a href="#" class="category badge">Story</a>
+                                    <h4 class="post-title">
+                                        <a href="#">How to reach your career goal</a>
+                                    </h4>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="bx bx-user"></i>&nbsp;saikot khan</a>
+                                        </li>
+                                        <li class="list-inline-item">17 July, 2021</li>
+                                    </ul>
+                                </div>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="./assets/images/reach-goal.jpg" alt="Success story">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 post post-over-content">
+                                <div class="wrap">
+                                    <a href="#" class="category badge">Food</a>
+                                    <h4 class="post-title">
+                                        <a href="#">Delicious Bangladeshi street food</a>
+                                    </h4>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="bx bx-user"></i>&nbsp;saikot khan</a>
+                                        </li>
+                                        <li class="list-inline-item">17 July, 2021</li>
+                                    </ul>
+                                </div>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="./assets/images/about_food.jpg" alt="street food">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 post post-over-content">
+                                <div class="wrap">
+                                    <a href="#" class="category badge">Sports</a>
+                                    <h4 class="post-title">
+                                        <a href="#">World No.1 all-rounder in cricket</a>
+                                    </h4>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="bx bx-user"></i>&nbsp;saikot khan</a>
+                                        </li>
+                                        <li class="list-inline-item">20 July, 2021</li>
+                                    </ul>
+                                </div>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="./assets/images/shahid-afridi-14v.jpg" alt="street food">
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                    </div>
+
+                    <div class="spacer" data-height="50"></div>
+                    <!--latest post-->
+                    <div class="section-header">
+                        <h3 class="section-title">Latest post</h3>
+                    </div>
+
+                    <div class="padding-30 rounded bordered latest-post">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 latest-bottom-gap">
+                                <div class="post post-list rounded">
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/event-1.jpg" alt="Latest post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="latest-content">
+                                        <ul class="meta list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <i class="bx bx-user"></i>&nbsp;saikot khan
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">Entertainment</a>
+                                            </li>
+                                            <li class="list-inline-item">13 July, 2021</li>
+                                        </ul>
+                                        <h5 class="post-title mt-2 mb-3">
+                                            <a href="#">BTS announce to arrange a huge concert</a>
+                                        </h5>
+                                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam quam quidem.</p>
+                                        <div class="post-bottom d-flex align-items-center">
+                                            <button class="toggle-button" title="Share Now">
+                                                <i class="bx bx-share-alt share-icon"></i>
+                                            </button>
+                                            <div class="social-share me-auto">
+                                                <ul class="icons list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-facebook share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-twitter share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-youtube share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-instagram share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-linkedin share-icon"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="more-options">
+                                                <a href="#"><i class="bx bx-dots-horizontal-rounded"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 latest-bottom-gap">
+                                <div class="post post-list rounded">
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/fashion-776.jpg" alt="Latest post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="latest-content">
+                                        <ul class="meta list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <i class="bx bx-user"></i>&nbsp;saikot khan
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">Fashion</a>
+                                            </li>
+                                            <li class="list-inline-item">18 July, 2021</li>
+                                        </ul>
+                                        <h5 class="post-title mt-2 mb-3">
+                                            <a href="#">Dubai fashion house announce a beautiful fashion week.</a>
+                                        </h5>
+                                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam quam quidem.</p>
+                                        <div class="post-bottom d-flex align-items-center">
+                                            <button class="toggle-button" title="Share Now">
+                                                <i class="bx bx-share-alt share-icon"></i>
+                                            </button>
+                                            <div class="social-share me-auto">
+                                                <ul class="icons list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-facebook share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-twitter share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-youtube share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-instagram share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-linkedin share-icon"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="more-options">
+                                                <a href="#"><i class="bx bx-dots-horizontal-rounded"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 latest-bottom-gap">
+                                <div class="post post-list rounded">
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/health-334.jpg" alt="Latest post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="latest-content">
+                                        <ul class="meta list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <i class="bx bx-user"></i>&nbsp;saikot khan
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">Health</a>
+                                            </li>
+                                            <li class="list-inline-item">20 July, 2021</li>
+                                        </ul>
+                                        <h5 class="post-title mt-2 mb-3">
+                                            <a href="#">Every week you need to checkup your health condition</a>
+                                        </h5>
+                                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam quam quidem.</p>
+                                        <div class="post-bottom d-flex align-items-center">
+                                            <button class="toggle-button" title="Share Now">
+                                                <i class="bx bx-share-alt share-icon"></i>
+                                            </button>
+                                            <div class="social-share me-auto">
+                                                <ul class="icons list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-facebook share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-twitter share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-youtube share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-instagram share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-linkedin share-icon"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="more-options">
+                                                <a href="#"><i class="bx bx-dots-horizontal-rounded"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 latest-bottom-gap">
+                                <div class="post post-list rounded">
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/shahid-afridi-14v.jpg" alt="Latest post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="latest-content">
+                                        <ul class="meta list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <i class="bx bx-user"></i>&nbsp;saikot khan
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">Sports</a>
+                                            </li>
+                                            <li class="list-inline-item">24 July, 2021</li>
+                                        </ul>
+                                        <h5 class="post-title mt-2 mb-3">
+                                            <a href="#">Shahid afridi got century only 37 balls</a>
+                                        </h5>
+                                        <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam quam quidem.</p>
+                                        <div class="post-bottom d-flex align-items-center">
+                                            <button class="toggle-button" title="Share Now">
+                                                <i class="bx bx-share-alt share-icon"></i>
+                                            </button>
+                                            <div class="social-share me-auto">
+                                                <ul class="icons list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-facebook share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-twitter share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-youtube share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-instagram share-icon"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#"><i class="bx bxl-linkedin share-icon"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="more-options">
+                                                <a href="#"><i class="bx bx-dots-horizontal-rounded"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-more text-center">
+                        <a href="#" class="btn btn-simple">Load More</a>
+                    </div>
+                    <div class="spacer" data-height="50"></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <div class="widget rounded">
+                            <!--section-1-->
+                            <div class="widget-about text-center">
+                                <a class="navbar-brand" href="index.html">Blog</a>
+                                <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequuntur cum debitis distinctio dolorem doloremque est, incidunt nihil quae, quisquam quos, saepe voluptas voluptatem. Ducimus impedit magni mollitia nesciunt unde.</p>
+                                <ul class="socials-icons list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="bx bxl-facebook share-icon"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="bx bxl-twitter share-icon"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="bx bxl-youtube share-icon"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="bx bxl-instagram share-icon"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#"><i class="bx bxl-linkedin share-icon"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--section-2-->
+                        <div class="widget rounded">
+                            <div class="widget-header text-center">
+                                <h3 class="widget-title">Popular Post</h3>
+                            </div>
+                            <div class="widget-content-wrap">
+                                <!--post-1-->
+                                <div class="post post-list">
+                                    <span class="number">1</span>
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/trend-1.jpg" alt="Popular post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="widget-content">
+                                        <h6 class="post-title mb-1">
+                                            <a href="#">3 ways to make your phone faster</a>
+                                        </h6>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">29 July, 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--post-2-->
+                                <div class="post post-list">
+                                    <span class="number">2</span>
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/61035307.jpg" alt="Popular post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="widget-content">
+                                        <h6 class="post-title mb-1">
+                                            <a href="#">Barcelona wins champion trophy</a>
+                                        </h6>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">9 July, 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--post-3-->
+                                <div class="post post-list">
+                                    <span class="number">3</span>
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/event-1.jpg" alt="Popular post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="widget-content">
+                                        <h6 class="post-title mb-1">
+                                            <a href="#">A big fest of rock music this week</a>
+                                        </h6>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">13 July, 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--post-4-->
+                                <div class="post post-list">
+                                    <span class="number">4</span>
+                                    <div class="wrap">
+                                        <a href="#">
+                                            <div class="thumb">
+                                                <img src="./assets/images/sidebar-4.jpeg" alt="Popular post">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="widget-content">
+                                        <h6 class="post-title mb-1">
+                                            <a href="#">Positive mind is a key of success</a>
+                                        </h6>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">21 July, 2021</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--section-3-->
+                        <div class="widget rounded">
+                            <div class="widget-header text-center">
+                                <h3 class="widget-title">Explore Topics</h3>
+                            </div>
+                            <div class="widget-topics-content">
+                                <ul class="list">
+                                    <li><i class='bx bxs-chevron-right topics-icon'></i><a href="#">Lifestyle<span class="maw">(5)</span></a></li>
+                                    <li><i class='bx bxs-chevron-right topics-icon'></i><a href="#">Sports<span>(7)</span></a></li>
+                                    <li><i class='bx bxs-chevron-right topics-icon'></i><a href="#">Food<span>(3)</span></a></li>
+                                    <li><i class='bx bxs-chevron-right topics-icon'></i><a href="#">Fashion<span>(9)</span></a></li>
+                                    <li><i class='bx bxs-chevron-right topics-icon'></i><a href="#">Trending<span>(6)</span></a></li>
+                                    <li><i class='bx bxs-chevron-right topics-icon'></i><a href="#">Culture<span>(8)</span></a></li>
+                                    <li><i class='bx bxs-chevron-right topics-icon'></i><a href="#">Entertainment<span>(12)</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--section-4-->
+                        <div class="widget rounded">
+                            <div class="widget-header text-center">
+                                <h3 class="widget-title">Newsletter</h3>
+                            </div>
+                            <div class="widget-newsletter">
+                                <p class="news-text text-center mb-3">Join 20,000 Subscribers</p>
+                                <form class="newsletter">
+                                    <input type="email" class="form-control w-100 text-center" placeholder="Email Address">
+                                    <button class="btn btn-default btn-custom">Sign up</button>
+                                </form>
+                                <span class="text-muted privacy-policy text-center mt-4">By signing up, You agree to our <a
+                                        href="#">Privacy policy</a></span>
+                            </div>
+                        </div>
+                        <!--section-5-->
+                        <div class="widget rounded">
+                            <div class="widget-header text-center">
+                                <h3 class="widget-title">Tag Clouds</h3>
+                            </div>
+                            <div class="widget-tags-content">
+                                <a href="#" class="tag">Lifestyle</a>
+                                <a href="#" class="tag">Cooking</a>
+                                <a href="#" class="tag">Fashion</a>
+                                <a href="#" class="tag">Trending</a>
+                                <a href="#" class="tag">Sports</a>
+                                <a href="#" class="tag">Politics</a>
+                                <a href="#" class="tag">Movie</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section-2 End-->
+</main>
+<div class="spacer" data-height="50"></div>
+<!--instagram section-->
+<section class="instagram">
+    <div class="container-lg">
+        <a href="#" class="instagram-btn">Blog on instagram</a>
+        <div class="d-flex flex-wrap">
+            <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                <div class="insta-item">
+                    <a href="#">
+                        <img src="./assets/images/insta-1.jpg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                <div class="insta-item">
+                    <a href="#">
+                        <img src="./assets/images/insta-2.jpg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+             <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                <div class="insta-item">
+                    <a href="#">
+                        <img src="./assets/images/insta-3.jpg" alt="instagram">
+                    </a>
+                </div>
+             </div>
+             <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                <div class="insta-item">
+                    <a href="#">
+                        <img src="./assets/images/sidebar-2.jpg" alt="instagram">
+                    </a>
+                </div>
+             </div>
+             <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                <div class="insta-item">
+                    <a href="#">
+                        <img src="./assets/images/insta-5.jpg" alt="instagram">
+                    </a>
+                </div>
+             </div>
+             <div class="col-6 col-sm-2 col-md-2 col-lg-2">
+                <div class="insta-item">
+                    <a href="#">
+                        <img src="./assets/images/insta-6.jpg" alt="instagram">
+                    </a>
+                </div>
+             </div>
+        </div>
+    </div>
+</section>
+<!--------------End Main section----------->
+
+
+<!-------------Footer section----------->
+<footer>
+    <div class="container-lg">
+        <div class="footer-inner">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4 copy-wrap">
+                    <span class="copyright">&copy; Copyright 2021. All Right Reserved</span>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <div class="social-icons text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#"><i class="bx bxl-facebook footer-social-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="bx bxl-twitter footer-social-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="bx bxl-youtube footer-social-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="bx bxl-instagram footer-social-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><i class="bx bxl-pinterest footer-social-icon"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 topWrap">
+                    <span class="return-top float-end" id="returnTop">
+                        <i class="bx bx-chevron-up top-icon" ></i>
+                        Back to top
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-------------End Footer section----------->
+
+
+
+
+
+<!-- jquery-->
+<script src="./assets/js/jquery.min.js"></script>
+<!-- bootstrap 5 js-->
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<!-- slick js-->
+<script src="assets/js/slick.js"></script>
+<!-- jquery sticky sidebar-->
+<script src="./assets/js/jquery.sticky-sidebar.min.js"></script>
+<!-- custom js-->
+<script src="./assets/js/custom.js"></script>
+</body>
+</html>
